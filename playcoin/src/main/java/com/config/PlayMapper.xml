@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="PlayMapper">
+
+	<select id="PlayUserList" resultType="Play">
+		select user_id,user_name,user_email,user_nickname,user_register_date from playcoin
+	</select>
+
+	<insert id="PlayJoin" parameterType="Play">
+		insert into playcoin values(#{user_id},#{user_name},#{user_email},#{user_nickname},sysdate)
+	</insert>
+
+	<select id="UserDetail" resultType="Play" parameterType="String">
+		select user_id,user_name,user_email,user_nickname,user_register_date 
+		from playcoin 
+		where user_name = #{user_name}
+	</select>
+	
+	<select id="CheckId" resultType="int" parameterType="Play">
+		select count(*) from playcoin where user_id = #{user_id}
+	</select>
+	
+	<select id="CheckEmail" resultType="int" parameterType="Play">
+		select count(*) from playcoin where user_email = #{user_email}
+	</select>
+</mapper>

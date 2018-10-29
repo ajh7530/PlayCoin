@@ -96,7 +96,7 @@ $(document).ready(function() {
 					$(".user_email").val('');
 					event.preventDefault();
 				}
-				else if (data=="possibility"){
+				else if (data == "possibility"){
 					alert("등록 성공");
 					location.href="./"
 				}
@@ -125,7 +125,7 @@ $(document).ready(function() {
 					alert("중복된 ID입니다.");
 					$(".user_id").val('');
 				}
-				else if (data=="possibility"){
+				else if (data == "possibility"){
 					alert("사용 가능한 ID입니다.");
 				}
 				
@@ -153,7 +153,7 @@ $(document).ready(function() {
 					alert("중복된 Email 입니다.");
 					$(".user_email").val('');
 				}
-				else if (data=="possibility"){
+				else if (data == "possibility"){
 					alert("사용 가능한 Email 입니다.");
 				}
 				
@@ -167,34 +167,28 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
-<form>
-<h1>사용자 등록</h1>
-<h5 style="color:red;">* 은 필수입니다.</h5>
-		<hr>
-		<br> 
-	<span style="color:red;">* </span>아이디 : <input type="text" class="user_id" maxlength="11" placeholder="아이디는 최대 10글자입니다.">
-	<span id="user_id_span" style="color:red;"></span>
-	<input type="button" class="id_check_button" value="아이디 중복검사">
-	
-		<br>
-		
-	<span style="color:red;">* </span>이름 : <input type="text" class="user_name" maxlength="11" placeholder="이름은 최대 10글자입니다.">
-	<span id="user_name_span" style="color:red;"></span>
-	
-		<br>
-		
-	<span style="color:red;">* </span>이메일 : <input type="email" class="user_email" maxlength="51" placeholder="이메일은 최대 50글자입니다.">
-	<span id="user_email_span" style="color:red;"></span>
-	<input type="button" class="email_check_button" value="이메일 중복검사">
-	
-		<br>
-		
-	<span style="margin-left: 12px;"> 별명 : </span><input type="text" class="user_nickname"><span id="user_nickname_span"></span>
-		<br>
-		<br>
-	<input type="button" value="사용자 등록" class="PlayJoin">
-</form>
-		<br>
-	<a href="./">홈 가기</a>
+	<form>
+		<h1>사용자 등록</h1>
+		<h5 style="color:red;">* 은 필수입니다.</h5>
+			<hr>
+			<br> 
+		<span style="color:red;">* </span>아이디 : <input type="text" class="user_id" maxlength="11" placeholder="아이디는 최대 10글자입니다.">
+		<span id="user_id_span" style="color:red;"></span>
+		<input type="button" class="id_check_button" value="아이디 중복검사">
+			<br>
+		<span style="color:red;">* </span>이름 : <input type="text" class="user_name" maxlength="11" placeholder="이름은 최대 10글자입니다.">
+		<span id="user_name_span" style="color:red;"></span>
+			<br>
+		<span style="color:red;">* </span>이메일 : <input type="email" class="user_email" maxlength="51" placeholder="이메일은 최대 50글자입니다.">
+		<span id="user_email_span" style="color:red;"></span>
+		<input type="button" class="email_check_button" value="이메일 중복검사">
+			<br>
+		<span style="margin-left: 12px;"> 별명 : </span><input type="text" class="user_nickname"><span id="user_nickname_span"></span>
+			<br>
+			<br>
+		<input type="button" value="사용자 등록" class="PlayJoin">
+	</form>
+	<br>
+<a href="./">홈 가기</a>
 </body>
 </html>

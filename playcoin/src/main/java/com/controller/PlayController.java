@@ -41,7 +41,6 @@ public class PlayController {
 	
 	@RequestMapping(value="/UserDetail")
 	public ModelAndView UserDetail(@RequestParam HashMap<String, Object> name_id_map) {
-		System.out.println(name_id_map);
 		List<PlayDTO> list = service.UserDetail(name_id_map);
 		ModelAndView mav = new ModelAndView();
 		

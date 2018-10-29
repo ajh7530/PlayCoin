@@ -137,7 +137,6 @@ $(document).ready(function() {
 	})// end id_check_button click
 	
 	$(".email_check_button").on("click",function(){
-		console.log("눌럿음");
 		var useremail = $(".user_email").val();
 		
 		$.ajax({

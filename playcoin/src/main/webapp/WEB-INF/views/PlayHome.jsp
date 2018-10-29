@@ -13,32 +13,6 @@
 <script type="text/javascript"
 	src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
-
-// $(document).ready(function(){
-	
-// 	$(".user_name_cl").on("click",function(){
-// 		username = $(this).attr("value");
-// 		console.log(username);
-		
-// 		$.ajax({
-// 			url : "UserDetail",
-// 			type : "post",
-// 			dataType : "text",
-// 			contentType : "application/json",
-// 			data : JSON.stringify({
-// 				user_name : username
-// 			}),
-// 			success : function(data, status, xhr) {
-// 				console.log("유져 상세 정보");
-// 			},
-// 			error : function(xhr, status, error) {
-// 				console.log(error);
-// 			}
-// 		})// end ajax
-// 		location.href="UserDetail"
-// 	})
-// })
-
 </script>
 </head>
 <body>
@@ -61,6 +35,5 @@
 			</c:forEach>
 	</table>
 </form>
-<!-- <br><br> -->
 </body>
 </html>

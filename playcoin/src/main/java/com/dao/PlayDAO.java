@@ -1,5 +1,6 @@
 package com.dao;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -22,8 +23,8 @@ public class PlayDAO {
 		template.insert("PlayMapper.PlayJoin",pdto);
 	}
 	
-	public List<PlayDTO> UserDetail(String user_name){
-		return template.selectList("PlayMapper.UserDetail",user_name);
+	public List<PlayDTO> UserDetail(HashMap<String, Object> name_id_map){
+		return template.selectList("PlayMapper.UserDetail",name_id_map);
 	}
 	
 	public int CheckId(PlayDTO pdto) {

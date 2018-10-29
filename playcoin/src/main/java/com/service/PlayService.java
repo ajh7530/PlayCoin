@@ -1,5 +1,6 @@
 package com.service;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,8 @@ public class PlayService {
 		dao.PlayJoin(pdto);
 	}
 	
-	public List<PlayDTO> UserDetail(String user_name){
-		return dao.UserDetail(user_name);
+	public List<PlayDTO> UserDetail(HashMap<String, Object> name_id_map){
+		return dao.UserDetail(name_id_map);
 	}
 	
 	public int CheckId(PlayDTO pdto) {

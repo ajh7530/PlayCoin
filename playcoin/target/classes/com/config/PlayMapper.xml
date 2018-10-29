@@ -12,10 +12,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		insert into playcoin values(#{user_id},#{user_name},#{user_email},#{user_nickname},sysdate)
 	</insert>
 
-	<select id="UserDetail" resultType="Play" parameterType="String">
+	<select id="UserDetail" resultType="Play" parameterType="hashmap">
 		select user_id,user_name,user_email,user_nickname,user_register_date 
 		from playcoin 
-		where user_name = #{user_name}
+		where user_name = #{user_name} and user_id = #{user_id}
 	</select>
 	
 	<select id="CheckId" resultType="int" parameterType="Play">

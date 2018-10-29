@@ -109,7 +109,6 @@ $(document).ready(function() {
 	
 	
 	$(".id_check_button").on("click",function(){
-		console.log("눌럿음");
 		var userid= $(".user_id").val();
 		
 		$.ajax({
